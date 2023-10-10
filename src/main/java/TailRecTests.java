@@ -20,12 +20,6 @@ public class TailRecTests {
         return goo(n-1, j, i + j);
     }
 
-    private static int luhnSum(int n){
-        if (n < 10) return n;
-        
-    }
-
-
     public static void main(String[] args) {
         System.out.println(fibonTail(4));
     }
