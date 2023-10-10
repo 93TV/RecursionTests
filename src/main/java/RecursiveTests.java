@@ -16,11 +16,6 @@ public class RecursiveTests {
         else return n * factorial(n - 1);
     }
 
-    private static int fibon(int n) {
-        if (n == 0) return 1;
-        else return 1 + fibon(n - 1);
-    }
-
     private static int power(int x, int y){
         if (y == 0) return 1;
         else return x * power(x, y - 1);
