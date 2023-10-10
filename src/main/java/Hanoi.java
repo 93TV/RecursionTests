@@ -11,13 +11,12 @@ public class Hanoi {
     }
 
     private static void move(char from, char to) {
-        i++;
-        System.out.println(i);
         System.out.println("Move disc from " + from + " to " + to);
 
     }
 
     public static void main(String[] args) {
+
         hanoi(4, 'A', 'B', 'C');
     }
 
