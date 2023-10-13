@@ -132,6 +132,7 @@ public class Sorting {
     }
 
 
+
     public static void main(String[] args) throws InterruptedException {
         fillArray();
         System.out.println("Before:");
