@@ -1,8 +1,9 @@
 import java.time.Duration;
 import java.time.Instant;
+import java.util.Random;
 
 public class Sorting {
-    private static int[] initArray = new int[1000000];
+    private static int[] initArray = new int[100];
     private static int initLength = initArray.length;
 
     private static void fillArray() {
@@ -108,7 +109,10 @@ public class Sorting {
 
     private static void quickSort(int[] inputArray, int lowIndex, int highIndex) {
         if (lowIndex >= highIndex) return;
-        int pivot = inputArray[highIndex];
+        int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
+        int pivot = inputArray[pivotIndex];
+        swap(inputArray, pivotIndex, highIndex);
+
         int leftPointer = lowIndex, rightPointer = highIndex;
 
         while (leftPointer < rightPointer) {
@@ -138,13 +142,13 @@ public class Sorting {
         System.out.println("Before:");
         Instant starts = Instant.now();
         Thread.sleep(10);
-//        printArray();
+        printArray();
 //        bubbleSort(initArray);
 //        mergeSort(initArray);
         quickSort(initArray, 0, initLength - 1);
 //        insertionSort(initArray);
         System.out.println("After:");
-//        printArray();
+        printArray();
         Instant ends = Instant.now();
         System.out.println(Duration.between(starts, ends));
 
