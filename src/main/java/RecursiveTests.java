@@ -47,7 +47,7 @@ public class RecursiveTests {
 //        System.out.println(recursiveMultiple(5, 1));
 //        System.out.println(recursiveMultiple(5, 2));
 //        System.out.println(recursiveMultiple(5, 3));
-//        System.out.println(factorial(5));
+        System.out.println(factorial(30));
 //        printFibonacci(5);
 //        System.out.println(power(5,2));
 //        System.out.println(factorial(5));
