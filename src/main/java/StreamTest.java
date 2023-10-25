@@ -1,5 +1,6 @@
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class StreamTest {
 
@@ -74,6 +75,8 @@ public class StreamTest {
                 .count();
         System.out.println(aantalVrouwen);
 
+
+        IntStream.iterate(0, i -> i + 1).forEach(System.out::println);
 
     }
 
